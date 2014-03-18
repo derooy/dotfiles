@@ -1,1 +1,1 @@
-curl https://raw.github.com/derooy/dotfiles/master/zsh | zsh
+curl https://github.com/derooy/dotfiles/blob/master/install.zsh | zsh

@@ -1,1 +1,1 @@
-curl https://raw.github.com/derooy/madbash/master/bootstrap.bash | bash
+curl https://github.com/derooy/dotfiles/blob/master/install.bash | bash
