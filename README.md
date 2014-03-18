@@ -1,8 +1,8 @@
 
 ###zsh
-	curl http://derooy.com.au/zsh | zsh
+	curl -L http://derooy.com.au/zsh | zsh
 ###bash
-	curl http://derooy.com.au/bash | bash
+	curl -L http://derooy.com.au/bash | bash
 
 #dependency
 	curl

@@ -1,1 +1,0 @@
-curl https://github.com/derooy/dotfiles/blob/master/install.zsh | zsh
