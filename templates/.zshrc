@@ -67,7 +67,7 @@ export EDITOR='vim'
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+export SSH_KEY_PATH="~/.ssh/dsa_id"
 alias gs="git status"
 alias sls="screen -ls" #list screens
 alias sd="screen -dmS" #screen in daemon mode
