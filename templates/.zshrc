@@ -69,7 +69,6 @@ export EDITOR='vim'
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 alias gs="git status"
-alias ga="git add -A; git commit -a -V"
 alias sls="screen -ls" #list screens
 alias sd="screen -dmS" #screen in daemon mode
 alias sr="screen -x" #connect to screen w/ multi allowed
