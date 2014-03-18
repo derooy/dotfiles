@@ -1,0 +1,1 @@
+curl https://raw.github.com/derooy/madbash/master/bootstrap.bash | bash
