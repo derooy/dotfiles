@@ -10,3 +10,4 @@ fi
 wget 'https://raw.github.com/derooy/dotfiles/master/templates/.zshrc' -O ~/.zshrc 
 echo 'sourcing zsh'
 source ~/.zshrc
+chsh -s `which zsh`
