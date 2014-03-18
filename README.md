@@ -1,8 +1,7 @@
 
-#usage
-##zsh
+###zsh
 	curl http://derooy.com.au/zsh | zsh
-##bash
+###bash
 	curl http://derooy.com.au/bash | bash
 
 #dependency
