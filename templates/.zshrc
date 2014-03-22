@@ -53,7 +53,8 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/go/bin:$PATH
 export GOPATH=$HOME/gocode
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin #golang
+export PATH=/usr/bin/node:$PATH #nodejs
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
