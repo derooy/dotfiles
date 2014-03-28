@@ -13,10 +13,4 @@ echo '\e[1;34m---- Source the .zshrc ----\e[0m'
 source ~/.zshrc
 echo '\e[1;34m---- Installation Complete ----\e[0m'
 echo '\e[1;34mPlease relog =3 to enable zsh\e[0m'
-tempzsh="zsh"
-if [ "${tempzsh/$SHELL}" != "zsh" ] 
-	then
-	sudo chsh -s $(which zsh)
-else
-	echo 'Already in zsh'
-fi
+sudo chsh -s $(which zsh)
