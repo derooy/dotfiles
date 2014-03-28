@@ -2,7 +2,7 @@ echo '\e[1;34m---- Grabbing default ohmyzsh if not installed. ----\e[0m'
 curl -L http://install.ohmyz.sh | zsh
 echo '\e[1;34m---- Backup .zshrc ----\e[0m'
 if [ ! -f ~/.zshrc ]; then
-    echo "zshrc not found"
+	echo "zshrc not found"
 else
 	echo "backing up to ~/.zshrc.backup"
 	yes | mv ~/.zshrc ~/.zshrc.backup
@@ -13,4 +13,10 @@ echo '\e[1;34m---- Source the .zshrc ----\e[0m'
 source ~/.zshrc
 echo '\e[1;34m---- Installation Complete ----\e[0m'
 echo '\e[1;34mPlease relog =3 to enable zsh\e[0m'
-sudo chsh -s `which zsh`
+tempzsh="zsh"
+if [ "${tempzsh/$SHELL}" != "zsh" ] 
+	then
+	sudo chsh -s $(which zsh)
+else
+	echo 'Already in zsh'
+fi
