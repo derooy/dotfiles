@@ -8,7 +8,7 @@ else
 	yes | mv ~/.zshrc ~/.zshrc.backup
 fi
 echo '\e[1;34m---- wGet the template from web ----\e[0m'
-wget 'https://raw.github.com/derooy/dotfiles/master/templates/.zshrc' -O ~/.zshrc 
+wget 'https://raw.github.com/derooy/dotfiles/master/templates/zshrc' -O ~/.zshrc 
 echo '\e[1;34m---- Source the .zshrc ----\e[0m'
 source ~/.zshrc
 echo '\e[1;34m---- Installation Complete ----\e[0m'
