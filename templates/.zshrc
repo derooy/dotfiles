@@ -69,17 +69,42 @@ export EDITOR='vim'
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/dsa_id"
-alias gs="git status"
+#git
+alias gs='git status'
+alias gca='git commit -v -a'
+alias ga='git add .'
+#screen
 alias sls="screen -ls" #list screens
 alias sd="screen -dmS" #screen in daemon mode
 alias sr="screen -x" #connect to screen w/ multi allowed
 alias ss="screen -S" #create screen with name
+alias slsa='sudo ls -laR /var/run/screen/'
+#zsh
 alias c='clear'
 alias q='exit'
-alias cp='rsync -a -h --stats --progress'
 alias f='sudo find / -name'
 alias ds='du -hs * | sort -h'
-alias gca='git commit -v -a'
-alias resource-from-template='yes | cp ~/.dotfiles/templates/.zshrc ~/.zshrc; source ~/.zshrc'
-alias slsa='ls -laR /var/run/screen/'
-alias rm='rm'
+alias rm='rm' #undo rm -i from plugin
+alias ln='echo "ln -s {source} {destination}"; ln -s'
+alias cp='cp' #remove -i from plugin
+#highly custom
+alias derooy-reinstall-zsh='yes | cp ~/.dotfiles/templates/.zshrc ~/.zshrc; source ~/.zshrc'
+cpy() {
+    cpy="$(readlink -f $*)"
+    echo $cpy
+}
+pst() {
+	cp $cpy "$*"
+}
+cp() {
+	src="$1"
+	dest="$2"
+	echo "cp \e[1;34m$src \e[0mto \e[1;36m$dest\e[0m"
+	rsync --archive --human-readable --stats --progress $src $dest
+	
+}
+# \e[0;31m
+# \e[1;34
+# \e[1;36
+
+alias gogo="/bin/cp /home/matt/.dotfiles/templates/.zshrc /home/matt/home/matt/.zshrc"
