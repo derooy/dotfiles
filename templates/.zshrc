@@ -88,7 +88,7 @@ alias rm='rm' #undo rm -i from plugin
 alias ln='echo "ln -s {source} {destination}"; ln -s'
 alias cp='cp' #remove -i from plugin
 #highly custom
-alias derooy-reinstall-zsh='yes | cp ~/.dotfiles/templates/.zshrc ~/.zshrc; source ~/.zshrc'
+alias derooy-reinstall-zsh='yes | cp ~/p/dotfiles/templates/.zshrc ~/.zshrc; source ~/.zshrc'
 cpy() {
     cpy="$(readlink -f $*)"
     echo $cpy
