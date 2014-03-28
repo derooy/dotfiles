@@ -84,9 +84,9 @@ alias c='clear'
 alias q='exit'
 alias f='sudo find / -name'
 alias ds='du -hs * | sort -h'
-alias rm='rm' #undo rm -i from plugin
+alias rm='/bin/rm' #undo rm -i from plugin
 alias ln='echo "ln -s {source} {destination}"; ln -s'
-alias cp='cp' #remove -i from plugin
+alias cp='/bin/cp' #remove -i from plugin
 #highly custom
 alias derooy-reinstall-zsh='yes | cp ~/p/dotfiles/templates/.zshrc ~/.zshrc; source ~/.zshrc'
 cpy() {
