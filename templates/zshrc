@@ -88,6 +88,7 @@ alias rm='/bin/rm' #undo rm -i from plugin
 alias ln='echo "ln -s {source} {destination}"; ln -s'
 alias cp='/bin/cp' #remove -i from plugin
 #highly custom
+alias -g C='| xclip -selection c'
 alias derooy-reinstall-zsh='yes | cp ~/p/dotfiles/templates/zshrc ~/.zshrc; source ~/.zshrc'
 cpy() {
     cpy="$(readlink -f $*)"
