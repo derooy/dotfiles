@@ -87,6 +87,12 @@ alias ds='du -hs * | sort -h'
 alias rm='/bin/rm' #undo rm -i from plugin
 alias ln='echo "ln -s {source} {destination}"; ln -s'
 alias cp='/bin/cp' #remove -i from plugin
+# sudo apt-get install {in}
+alias in='sudo apt-get install'
+# sudo apt-cache search {se}
+alias se='sudo apt-cache search'
+# sudo apt-cache policy {po}
+alias po='sudo apt-cache policy'
 #highly custom
 alias -g C='| xclip -selection c'
 alias derooy-reinstall-zsh='yes | cp ~/p/dotfiles/templates/zshrc ~/.zshrc; source ~/.zshrc'
