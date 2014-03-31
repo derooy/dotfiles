@@ -93,6 +93,8 @@ alias in='sudo apt-get install'
 alias se='sudo apt-cache search'
 # sudo apt-cache policy {po}
 alias po='sudo apt-cache policy'
+alias ppa='sudo add-apt-repository ppa:'
+alias ppal='grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*'
 #highly custom
 alias -g C='| xclip -selection c'
 alias derooy-reinstall-zsh='yes | cp ~/p/dotfiles/templates/zshrc ~/.zshrc; source ~/.zshrc'
