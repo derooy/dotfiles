@@ -88,6 +88,7 @@ alias rm='/bin/rm' #undo rm -i from plugin
 alias ln='echo "ln -s {source} {destination}"; ln -s'
 alias cp='/bin/cp' #remove -i from plugin
 # sudo apt-get install {in}
+alias matt@corbeti.org='ssh matt@corbeti.org -p 21976'
 
 ##------------ apt-get
 alias in='sudo apt-get install'
