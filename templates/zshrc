@@ -34,6 +34,8 @@ alias ln='echo "ln -s {source} {destination}"; ln -s'
 alias cp='/bin/cp' #remove -i from plugin
 # sudo apt-get install {in}
 alias matt@corbeti.org='ssh matt@corbeti.org -p 21976'
+alias matt@xbmc='ssh matt@192.168.1.100'
+alias matt@btc='ssh matt@192.168.1.30'
 
 
 #apt-get
