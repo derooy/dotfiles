@@ -43,7 +43,7 @@ alias in='sudo apt-get install'
 alias se='sudo apt-cache search'
 alias po='sudo apt-cache policy'
 alias upt='sudo apt-get update'
-alias upd='sudo apt-get upgrade'
+alias upg='sudo apt-get upgrade'
 function ppa() {sudo add-apt-repository ppa:$@}
 alias ppal='grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*'
 
