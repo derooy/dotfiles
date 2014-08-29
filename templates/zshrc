@@ -95,10 +95,4 @@ pwd() {
 		readlink -f "$*"
 	fi
 }
-cp() {
-	src="$1"
-	dest="$2"
-	echo "cp \e[1;34m$src \e[0mto \e[1;36m$dest\e[0m"
-	rsync --archive --human-readable --stats --progress $src $dest
-	echo "cp \e[1;34m$src \e[0mto \e[1;36m$dest\e[0m"
-}
+
