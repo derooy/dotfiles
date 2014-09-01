@@ -1,3 +1,7 @@
+##todo
+
++ add mosh ssh connections
++ terminator layouts to .config ( and create )
 
 ###zsh
 	sudo apt-get install zsh
