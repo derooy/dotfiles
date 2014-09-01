@@ -2,6 +2,7 @@
 
 + add mosh ssh connections
 + terminator layouts to .config ( and create )
++ auto color change to background depending on server? at least PS1.
 
 ###zsh
 	sudo apt-get install zsh
