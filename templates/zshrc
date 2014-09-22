@@ -36,6 +36,7 @@ alias cp='/bin/cp' #remove -i from plugin
 alias matt@corbeti.org="mosh --ssh='ssh -p 21976' matt@corbeti.org"
 alias matt@xbmc='ssh matt@192.168.1.100'
 alias matt@btc='ssh matt@192.168.1.30'
+alias matt@guppy.media="mosh --ssh='ssh -p 21976' matt@5.9.10.147"
 
 
 #apt-get
