@@ -27,22 +27,22 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 hn=$(hostname)
 case "$hn" in
 	l-gravity)
-		hn_c="$fg[004]"
+		hn_c="$FG[004]"
 	;;
 	l-xbmc)
-		hn_c="$fg[015]"
+		hn_c="$FG[015]"
 	;;
 	l-mum)
-		hn_c="$fg[087]"
+		hn_c="$FG[087]"
 	;;
 	r-hertz-guppy)
-		hn_c="$fg[118]"
+		hn_c="$FG[118]"
 	;;
 	r-online-corbeti)
-		hn_c="$fg[202]"
+		hn_c="$FG[202]"
 	;;
 	*)
-		hn_c="$fg[009]"
+		hn_c="$FG[009]"
 	;;
 esac 
 PROMPT='%{$fg_bold[cyan]%}%n%{$reset_color%}%{$fg[yellow]%}@%{$reset_color%}%{$hn_c%}%m%{$reset_color%}:%{${fg_bold[green]}%}%~%{$reset_color%}$(git_prompt_info)
