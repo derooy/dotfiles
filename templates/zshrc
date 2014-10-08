@@ -12,6 +12,43 @@ export PATH=/usr/bin/node:$PATH #nodejs
 export EDITOR='vim'
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# ----- variable hostname colors
+# 226 yellow
+# 207 purple
+# 202 orange
+# 195 grey
+# 118 green
+# 087 aqua
+# 015 white
+# 004 blue
+# 009 red
+
+
+hn=$(hostname)
+case "$hn" in
+	l-gravity)
+		hn_c="$fg[004]"
+	;;
+	l-xbmc)
+		hn_c="$fg[015]"
+	;;
+	l-mum)
+		hn_c="$fg[087]"
+	;;
+	r-hertz-guppy)
+		hn_c="$fg[118]"
+	;;
+	r-online-corbeti)
+		hn_c="$fg[202]"
+	;;
+	*)
+		hn_c="$fg[009]"
+	;;
+esac 
+PROMPT='%{$fg_bold[cyan]%}%n%{$reset_color%}%{$fg[yellow]%}@%{$reset_color%}%{$hn_c%}%m%{$reset_color%}:%{${fg_bold[green]}%}%~%{$reset_color%}$(git_prompt_info)
+%{${fg[$CARETCOLOR]}%}%# %{${reset_color}%}'
+	# edited one V
+
 # ------------------- My personal extras
 
 #git
@@ -50,7 +87,7 @@ alias ppal='grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*'
 
 #highly custom
 alias todo='subl ~/s/Dropbox/Todo.md'
-alias derooy-reinstall-zsh='yes | cp ~/p/dotfiles/templates/zshrc ~/.zshrc; source ~/.zshrc'
+alias derooy-reinstall-zsh="wget 'https://raw.github.com/derooy/dotfiles/master/templates/zshrc' -O ~/.zshrc; source ~/.zshrc"
 cb() { # alias -g C='| tee /dev/tty | tr -d '\n' | xclip -selection clipboard'
   local _scs_col="\e[0;32m"; local _wrn_col='\e[1;31m'; local _trn_col='\e[0;33m'
   # Check that xclip is installed.
