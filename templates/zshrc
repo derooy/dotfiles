@@ -14,14 +14,14 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # ----- variable hostname colors
 # 226 yellow
-# 207 purple
-# 202 orange
+# 207 purple 
+# 202 orange s
 # 195 grey
-# 118 green
-# 087 aqua
-# 015 white
-# 004 blue
-# 009 red
+# 118 green s
+# 087 aqua s
+# 015 white s
+# 004 blue s
+# 009 red s
 
 
 hn=$(hostname)
@@ -32,6 +32,9 @@ case "$hn" in
 	l-xbmc)
 		hn_c="$FG[015]"
 	;;
+  l-invent)
+    hn_c="$FG[207]"
+  ;;
 	l-mum)
 		hn_c="$FG[087]"
 	;;
