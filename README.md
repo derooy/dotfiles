@@ -5,11 +5,11 @@
 + auto color change to background depending on server? at least PS1.
 
 ###zsh
-	sudo apt-get install zsh
-	curl -L http://derooy.com.au/zsh | zsh
+	sudo apt-get install -y zsh git curl
+	curl -L http://derooy.com.au/zsh | sh
 ###bash
 	sudo apt-get install bash
-	curl -L http://derooy.com.au/bash | bash
+	curl -L http://derooy.com.au/bash | sh
 #todo
 	move .screenrc to home dir during install
 	edit screenrc to understand tabs
