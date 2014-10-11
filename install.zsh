@@ -16,5 +16,5 @@ source ~/.zshrc
 echo '\e[1;34m---- Source the .zshrc ----\e[0m'
 echo '\e[1;34m---- Installation Complete ----\e[0m'
 echo '\e[1;34mPlease relog =3 to enable zsh\e[0m'
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh) matt
 
