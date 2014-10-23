@@ -136,11 +136,5 @@ cpy() {
 pst() {
 	cp $cpy "$*"
 }
-pwd() {
-	if [ $# -eq 0 ]; then
-		readlink -f .
-	else
-		readlink -f "$*"
-	fi
-}
+
 function N() {sudo add-apt-repository ppa:$@}
