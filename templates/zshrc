@@ -57,9 +57,9 @@ PROMPT='%{$fg_bold[cyan]%}%n%{$reset_color%}%{$fg[yellow]%}@%{$reset_color%}%{$h
 ## Google app engine
 alias goapp=~/p/google-cloud-sdk/platform/google_appengine/goapp
 # The next line updates PATH for the Google Cloud SDK.
-source '/home/matt/p/google-cloud-sdk/path.bash.inc'
+source '/home/matt/p/google-cloud-sdk/path.zsh.inc'
 # The next line enables bash completion for gcloud.
-source '/home/matt/p/google-cloud-sdk/completion.bash.inc'
+source '/home/matt/p/google-cloud-sdk/completion.zsh.inc'
 #git
 alias gs='git status'
 alias gc='git commit -v -a'
