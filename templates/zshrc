@@ -53,7 +53,13 @@ PROMPT='%{$fg_bold[cyan]%}%n%{$reset_color%}%{$fg[yellow]%}@%{$reset_color%}%{$h
 	# edited one V
 
 # ------------------- My personal extras
-
+# programming
+## Google app engine
+alias goapp=~/p/google-cloud-sdk/platform/google_appengine/goapp
+# The next line updates PATH for the Google Cloud SDK.
+source '/home/matt/p/google-cloud-sdk/path.zsh.inc'
+# The next line enables bash completion for gcloud.
+source '/home/matt/p/google-cloud-sdk/completion.zsh.inc'
 #git
 command -v hub >/dev/null 2>&1 || { eval "$(hub alias -s)" }
 alias gs='git status'
@@ -87,6 +93,7 @@ alias po='sudo apt-cache policy'
 alias upt='sudo apt-get update'
 alias upg='sudo apt-get upgrade'
 function ppa() {sudo add-apt-repository ppa:$@}
+
 alias ppal='grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*'
 
 #highly custom
@@ -130,11 +137,5 @@ cpy() {
 pst() {
 	cp $cpy "$*"
 }
-pwd() {
-	if [ $# -eq 0 ]; then
-		readlink -f .
-	else
-		readlink -f "$*"
-	fi
-}
 
+function N() {sudo add-apt-repository ppa:$@}
