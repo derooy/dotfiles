@@ -55,6 +55,7 @@ PROMPT='%{$fg_bold[cyan]%}%n%{$reset_color%}%{$fg[yellow]%}@%{$reset_color%}%{$h
 # ------------------- My personal extras
 
 #git
+command -v hub >/dev/null 2>&1 || { eval "$(hub alias -s)" }
 alias gs='git status'
 alias gc='git commit -v -a'
 alias ga='git add .'
