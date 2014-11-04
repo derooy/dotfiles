@@ -8,7 +8,7 @@ source $ZSH/oh-my-zsh.sh
 #http://stackoverflow.com/questions/18212175/npm-yeoman-install-generator-angular-without-sudo/18277225#18277225
 #mkdir .node
 #echo prefix = ~/.node >> ~/.npmrc
-
+export NODE_PATH=$NODE_PATH:/home/matt/.node/lib/node_modules
 export PATH="$PATH:$HOME/.node/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
