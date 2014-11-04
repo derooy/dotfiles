@@ -5,13 +5,16 @@ DISABLE_AUTO_UPDATE="false"
 COMPLETION_WAITING_DOTS="true"
 plugins=(git common-aliases cp golang history last-working-dir screen node npm ruby rvm gem)
 source $ZSH/oh-my-zsh.sh
+#http://stackoverflow.com/questions/18212175/npm-yeoman-install-generator-angular-without-sudo/18277225#18277225
+#mkdir .node
+#echo prefix = ~/.node >> ~/.npmrc
+
+export PATH="$PATH:$HOME/.node/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-export PATH="$PATH:$HOME/.rvm/rubies/ruby-2.1.4/bin"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/go/bin:$PATH
 export GOPATH=$HOME/gocode
 export PATH=$PATH:$GOPATH/bin #golang
-export PATH=/usr/bin/node:$PATH #nodejs
 export EDITOR='vim'
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 
