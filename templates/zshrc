@@ -5,6 +5,7 @@ DISABLE_AUTO_UPDATE="false"
 COMPLETION_WAITING_DOTS="true"
 plugins=(git common-aliases cp golang history last-working-dir screen)
 source $ZSH/oh-my-zsh.sh
+export PATH="$PATH:$HOME/.rvm/rubies/ruby-2.1.4/bin"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/go/bin:$PATH
 export GOPATH=$HOME/gocode
