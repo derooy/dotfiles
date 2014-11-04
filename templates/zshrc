@@ -3,7 +3,7 @@ ZSH_THEME="re5et"
 DISABLE_AUTO_UPDATE="true"
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
-plugins=(git common-aliases cp golang history last-working-dir screen)
+plugins=(git common-aliases cp golang history last-working-dir screen ruby)
 source $ZSH/oh-my-zsh.sh
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/go/bin:$PATH
 export GOPATH=$HOME/gocode
