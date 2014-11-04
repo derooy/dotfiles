@@ -3,8 +3,9 @@ ZSH_THEME="re5et"
 DISABLE_AUTO_UPDATE="false"
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
-plugins=(git common-aliases cp golang history last-working-dir screen)
+plugins=(git common-aliases cp golang history last-working-dir screen node npm ruby rvm gem)
 source $ZSH/oh-my-zsh.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 export PATH="$PATH:$HOME/.rvm/rubies/ruby-2.1.4/bin"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/go/bin:$PATH
