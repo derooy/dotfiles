@@ -7,7 +7,7 @@
 
 ###zsh
 	sudo apt-get install -y zsh git curl
-	curl -L http://derooy.com.au/zsh | zsh
+	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/install.zsh | zsh
 ###bash
 	sudo apt-get install bash
 	curl -L http://derooy.com.au/bash | bash
