@@ -7,6 +7,7 @@ plugins=(git common-aliases cp golang history last-working-dir screen node npm)
 source $ZSH/oh-my-zsh.sh
 #http://stackoverflow.com/questions/18212175/npm-yeoman-install-generator-angular-without-sudo/18277225#18277225
 #mkdir .node
+#https://gist.github.com/isaacs/579814#file-yet-another-option-sh
 #echo prefix = ~/.node >> ~/.npmrc
 export NODE_PATH=$NODE_PATH:/home/matt/.node/lib/node_modules
 export PATH="$PATH:$HOME/.node/bin"
