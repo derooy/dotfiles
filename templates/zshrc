@@ -101,7 +101,7 @@ function ppa() {sudo add-apt-repository ppa:$@}
 alias ppal='grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*'
 
 #highly custom
-alias todo='subl ~/s/Dropbox/Todo.md'
+alias todo='subl ~/s/Dropbox/TODO.md'
 alias derooy-reinstall-zsh="wget 'https://raw.github.com/derooy/dotfiles/master/templates/zshrc' -O ~/.zshrc; source ~/.zshrc"
 cb() { # alias -g C='| tee /dev/tty | tr -d '\n' | xclip -selection clipboard'
   local _scs_col="\e[0;32m"; local _wrn_col='\e[1;31m'; local _trn_col='\e[0;33m'
