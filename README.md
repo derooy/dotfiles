@@ -6,6 +6,7 @@
 + auto color change to background depending on server? at least PS1.
 
 ###zsh
+	get hub 'the github wrapper' https://github.com/github/hub/releases
 	sudo apt-get install -y zsh git curl
 	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/install.zsh | zsh
 ###bash
