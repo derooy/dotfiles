@@ -33,10 +33,10 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 hn=$(hostname)
 case "$hn" in
-	l-gravity)
+	linblackdesktop)
 		hn_c="$FG[004]"
 	;;
-	l-xbmc)
+	xbmc)
 		hn_c="$FG[015]"
 	;;
   l-invent)
