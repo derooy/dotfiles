@@ -6,9 +6,15 @@
 + auto color change to background depending on server? at least PS1.
 
 ###zsh
-	get hub 'the github wrapper' https://github.com/github/hub/releases
+```bash
+	wget https://github.com/github/hub/releases/download/v2.2.1/hub-linux-amd64-2.2.1.tar.gz
+	tar -xvf hub-linux-amd64-2.2.1.tar.gz
+	sudo cp hub-linux-amd64-2.2.1/hub /usr/local/bin
+	rm -r hub-linux-amd64-2.2.1
+	rm hub-linux-amd64-2.2.1.tar.gz
 	sudo apt-get install -y zsh git curl
 	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/install.zsh | zsh
+```
 ###bash
 	sudo apt-get install bash
 	curl -L http://derooy.com.au/bash | bash
