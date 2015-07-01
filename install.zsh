@@ -1,5 +1,6 @@
 #!/bin/sh
 
+set -e
 echo '\e[1;34m---- Grabbing default ohmyzsh if not installed. ----\e[0m'
 curl -L http://install.ohmyz.sh | zsh
 echo '\e[1;34m---- Backup .zshrc ----\e[0m'
