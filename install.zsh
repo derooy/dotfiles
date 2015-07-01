@@ -8,12 +8,12 @@ if [ ! -f ~/.zshrc ]; then
 	echo "zshrc not found"
 else
 	echo "backing up to ~/.zshrc.backup"
-	yes | mv ~/.zshrc ~/.zshrc.backup
+	yes | mv /home/matt/.zshrc /home/matt/.backup
 fi
 echo '\e[1;34m---- wGet the template from web ----\e[0m'
 wget 'https://raw.github.com/derooy/dotfiles/master/templates/zshrc' -O ~/.zshrc 
 echo '\e[1;34m---- Source the .zshrc ----\e[0m'
-source ~/.zshrc
+source /home/matt/.zshrc
 echo '\e[1;34m---- Source the .zshrc ----\e[0m'
 echo '\e[1;34m---- Installation Complete ----\e[0m'
 echo '\e[1;34mPlease relog =3 to enable zsh\e[0m'
