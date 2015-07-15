@@ -98,6 +98,10 @@ alias upt='sudo apt-get update'
 alias upg='sudo apt-get upgrade'
 function ppa() {sudo add-apt-repository ppa:$@}
 
+#vagrant
+alias vp='vagrant provision'
+alias vu='vagrant up'
+
 alias ppal='grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*'
 
 #highly custom
