@@ -1,1 +1,1 @@
-alias derooy-update-custom="bash ~/.bash_it/custom/derooy-update-custom.bash"
+alias derooy-update-custom="bash ~/.bash_it/custom/derooy-update-custom.sh"
