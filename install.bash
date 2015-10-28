@@ -33,4 +33,18 @@ done
 #get custom alias' completions and plugins from github
 git clone https://github.com/derooy/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles/bash-it-custom
-. ./derooy-update-custom.sh
+user=$(whoami)
+echo "removing custom from bash-it"
+cd ~/.bash_it/custom/
+find ! -name 'example.bash' -type l -exec rm -f {} +
+
+echo "updating aliases into bash-it"
+FILES=~/.dotfiles/bash-it-custom/*
+for f in $FILES
+do
+filename=$(basename "$f")
+echo ln -s "$f" "/home/$user/.bash_it/custom/$filename"
+ln -s "$f" "/home/$user/.bash_it/custom/$filename"
+done
+
+echo "--= please run reload =--"
