@@ -1,5 +1,5 @@
 #!/bin/bash
-
+user=$(whoami)
 # make sure bash-it and dotfiles is correct
 if [[ ! -d ~/.bash_it && ! -d ~/.dotfiles ]]; then
   # Control will enter here if $DIRECTORY exists.
@@ -24,7 +24,8 @@ FILES=~/.dotfiles/bash-it-custom/*
 for f in $FILES
 do
 filename=$(basename "$f")
-echo ln -s "$f" "~/.bash_it/custom/$filename"
+echo ln -s "$f" "/home/$user/.bash_it/custom/$filename"
+ln -s "$f" "/home/$user/.bash_it/custom/$filename"
 done
 
 echo "source the new bash-it"
