@@ -31,3 +31,6 @@ do
 	bash-it enable completion $i
 done
 #get custom alias' completions and plugins from github
+git clone https://github.com/derooy/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles/bash-it-custom
+. ./derooy-update-custom.sh
