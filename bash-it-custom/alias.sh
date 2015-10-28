@@ -1,1 +1,0 @@
-alias derooy-update-custom="bash ~/.bash_it/custom/derooy-update-custom.sh"

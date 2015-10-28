@@ -17,7 +17,7 @@ git push
 
 echo "removing custom from bash-it"
 cd ~/.bash_it/custom/
-find ! -name 'example.bash' -type f -exec rm -f {} +
+find ! -name 'example.bash' -type l -exec rm -f {} +
 
 echo "updating aliases into bash-it"
 FILES=~/.dotfiles/bash-it-custom/*
