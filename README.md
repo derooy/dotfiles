@@ -3,6 +3,8 @@
 	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/install.bash | bash
 
 ## todo
++ git config --global user.name "Your Name"
++ git config --global user.email "matt@derooy.com.au"
 + fancy colours
 + chsh
 + add wget command for authorized keys & securing hardening guide
