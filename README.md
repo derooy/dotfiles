@@ -1,10 +1,11 @@
 ## bash
 	sudo apt-get install bash git
+    git config --global user.name "Matthew de Rooy"
+    git config --global user.email "matt@derooy.com.au"
 	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/install.bash | bash
 
 ## todo
-+ git config --global user.name "Your Name"
-+ git config --global user.email "matt@derooy.com.au"
+
 + fancy colours
 + chsh
 + add wget command for authorized keys & securing hardening guide
