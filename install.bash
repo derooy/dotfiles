@@ -13,19 +13,19 @@ sed -i '/export BASH_IT_THEME=/ s/bobby/zork/' ~/.bashrc
 source ~/.bashrc #so new theme and can get plugins etc.
 cd ~/
 #set my default plugins
-plugins=(dirs base explain extract fasd git history nginx projects hub ssh)
+plugins=()
 for i in "${plugins[@]}"
 do
 	bash-it enable plugin $i
 done
 #set my default alias'
-aliases=(apt git vim vagrant docker)
+aliases=()
 for i in "${aliases[@]}"
 do
 	bash-it enable alias $i
 done
 #set my default completions
-completions=(defaults dirs git hub projects ssh vagrant)
+completions=(defaults git ssh vagrant)
 for i in "${completions[@]}"
 do
 	bash-it enable completion $i
