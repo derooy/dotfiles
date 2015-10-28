@@ -1,6 +1,6 @@
 ## bash
 	sudo apt-get install bash git
-	curl -L https://github.com/derooy/dotfiles/blob/master/install.bash | bash
+	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/install.bash | bash
 
 ## todo
 + fancy colours
