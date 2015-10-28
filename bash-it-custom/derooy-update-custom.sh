@@ -28,4 +28,4 @@ echo ln -s "$f" "/home/$user/.bash_it/custom/$filename"
 ln -s "$f" "/home/$user/.bash_it/custom/$filename"
 done
 
-echo "please run reload"
+echo "--= please run reload =--"
