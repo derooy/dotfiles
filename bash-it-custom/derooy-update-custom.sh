@@ -28,5 +28,4 @@ echo ln -s "$f" "/home/$user/.bash_it/custom/$filename"
 ln -s "$f" "/home/$user/.bash_it/custom/$filename"
 done
 
-echo "source the new bash-it"
-source ~/.bashrc
+echo "please run reload"
