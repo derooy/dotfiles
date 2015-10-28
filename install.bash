@@ -25,7 +25,7 @@ do
 	bash-it enable alias $i
 done
 #set my default completions
-completions=(defaults git ssh vagrant)
+completions=(defaults git ssh vagrant git_flow_avh)
 for i in "${completions[@]}"
 do
 	bash-it enable completion $i
