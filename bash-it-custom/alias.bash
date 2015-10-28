@@ -23,7 +23,9 @@ alias se='sudo apt-cache search'
 alias po='sudo apt-cache policy'
 alias upt='sudo apt-get update'
 alias upg='sudo apt-get upgrade'
-function ppa() {sudo add-apt-repository ppa:$@}
+function ppa() {
+	sudo add-apt-repository ppa:$@
+}
 
 #vagrant
 alias vp='vagrant provision'
