@@ -1,6 +1,6 @@
 alias derooy-update-custom="bash ~/.bash_it/custom/derooy-update-custom.sh"
 #list
-alias l=ls -l
+alias l='ls -l'
 alias gs='git status'
 alias gc='git commit -v -a'
 alias ga='git add .'
