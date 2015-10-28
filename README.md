@@ -6,6 +6,7 @@
 
 ## todo
 
++ update script that is seperate from saving script
 + fancy colours
 + chsh
 + add wget command for authorized keys & securing hardening guide
