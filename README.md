@@ -7,6 +7,8 @@
 ## todo
 
 + update script that is seperate from saving script
++ set completion-ignore-case On
++ $include /etc/inputrc in ~/.inputrc
 + fancy colours
 + chsh
 + add wget command for authorized keys & securing hardening guide
