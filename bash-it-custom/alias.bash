@@ -12,6 +12,8 @@ alias ls='ls --color=auto'
 alias gs='git status'
 alias gc='git commit -v -a'
 alias ga='git add .'
+alias gl='git pull'
+alias gp='git push'
 # screen
 alias sls="screen -ls" #list screens
 alias sd="screen -dmS" #screen in daemon mode
