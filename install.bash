@@ -46,5 +46,7 @@ filename=$(basename "$f")
 echo ln -s "$f" "/home/$user/.bash_it/custom/$filename"
 ln -s "$f" "/home/$user/.bash_it/custom/$filename"
 done
+echo "tab completion case insenstive"
+echo "set completion-ignore-case On" > ~/.inputrc
 
 echo "--= please run reload =--"
