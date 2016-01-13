@@ -1,4 +1,5 @@
 ## bash
+	sudo apt-get update
 	sudo apt-get install -y bash git curl
     git config --global user.name "Matthew de Rooy"
     git config --global user.email "matt@derooy.com.au"
