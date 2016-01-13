@@ -1,5 +1,5 @@
 ## bash
-	sudo apt-get install bash git
+	sudo apt-get install -y bash git curl
     git config --global user.name "Matthew de Rooy"
     git config --global user.email "matt@derooy.com.au"
 	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/install.bash | bash
