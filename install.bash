@@ -49,4 +49,5 @@ done
 echo "tab completion case insenstive"
 echo "set completion-ignore-case On" > ~/.inputrc
 git config --global push.default simple
+git config --global url.ssh://git@github.com/.insteadOf https://github.com/
 echo "--= please run reload =--"
