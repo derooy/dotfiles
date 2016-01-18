@@ -48,5 +48,5 @@ ln -s "$f" "/home/$user/.bash_it/custom/$filename"
 done
 echo "tab completion case insenstive"
 echo "set completion-ignore-case On" > ~/.inputrc
-
+git config --global push.default simple
 echo "--= please run reload =--"
