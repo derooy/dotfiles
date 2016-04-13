@@ -6,10 +6,10 @@
 	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/install.bash | bash
 	OR derooy-install
 ## uninstall
-	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/bash-it-custom/derooy-uninstall.bash | bash
+	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/scripts/derooy-uninstall.bash | bash
 	OR derooy-uninstall
 ## reinstall
-	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/bash-it-custom/derooy-reinstall.bash | bash
+	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/scripts/derooy-reinstall.bash | bash
 	OR derooy-reinstall
 
 
