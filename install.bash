@@ -57,8 +57,8 @@ echo ln -s "$f" "/home/$user/.bash_it/custom/$filename"
 ln -s "$f" "/home/$user/.bash_it/custom/$filename"
 done
 echo "tab completion case insenstive"
-echo "\$include /etc/inputrc" > ~/.inputrc
-echo "set completion-ignore-case On" > ~/.inputrc
+echo "\$include /etc/inputrc" >> ~/.inputrc
+echo "set completion-ignore-case On" >> ~/.inputrc
 git config --global push.default simple
 git config --global url.ssh://git@github.com/.insteadOf https://github.com/
 echo "--= please run reload =--"
