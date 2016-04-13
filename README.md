@@ -3,6 +3,7 @@
 	sudo apt-get install -y bash git curl
 	git config --global user.name "Matthew de Rooy"
 	git config --global user.email "matt@derooy.com.au"
+	git config --global url.ssh://git@github.com/.insteadOf https://github.com/
 	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/install.bash | bash
 	OR derooy-install
 ## uninstall
