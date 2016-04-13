@@ -45,7 +45,7 @@ done
 
 #get custom alias' completions and plugins from github
 git clone --depth=1 https://github.com/derooy/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles/bash-it-custom
+cd ~/.dotfiles/autoSource
 user=$(whoami)
 
 echo "updating aliases into bash-it"
