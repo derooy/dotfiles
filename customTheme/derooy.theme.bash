@@ -70,7 +70,8 @@ prompt() {
     my_ps_host="${red}\h${normal}";
     # yes, these are the the same for now ...
     my_ps_host_root="${red}\h${normal}";
-    case "$hostname" in
+    hn=$(hostname)
+    case $hn in
         pantha|zebra|bream) 
         my_ps_host="${green}\h${normal}";
         my_ps_host_root="${green}\h${normal}";
