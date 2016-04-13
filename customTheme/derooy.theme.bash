@@ -70,6 +70,17 @@ prompt() {
     my_ps_host="${red}\h${normal}";
     # yes, these are the the same for now ...
     my_ps_host_root="${red}\h${normal}";
+case "$hostname" in
+    "pantha"|"zebra"|"bream") 
+    my_ps_host="${green}\h${normal}";
+    my_ps_host_root="${green}\h${normal}";
+    ;;
+    "raspberrypi") 
+    my_ps_host="${blue}\h${normal}";
+    my_ps_host_root="${blue}\h${normal}";
+    ;;
+esac
+
  
     my_ps_user="${bold_green}\u${normal}"
     my_ps_root="${bold_red}\u${normal}";
