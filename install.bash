@@ -49,7 +49,7 @@ cd ~/.dotfiles/bash-it-custom
 user=$(whoami)
 
 echo "updating aliases into bash-it"
-FILES=~/.dotfiles/bash-it-custom/*
+FILES=~/.dotfiles/autoSource/*
 for f in $FILES
 do
 filename=$(basename "$f")
