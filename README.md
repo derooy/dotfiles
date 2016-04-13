@@ -1,15 +1,21 @@
-## bash
+## Install
 	sudo apt-get update
 	sudo apt-get install -y bash git curl
-    git config --global user.name "Matthew de Rooy"
-    git config --global user.email "matt@derooy.com.au"
+	git config --global user.name "Matthew de Rooy"
+	git config --global user.email "matt@derooy.com.au"
 	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/install.bash | bash
+	OR derooy-install
+## uninstall
+	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/bash-it-custom/derooy-uninstall.sh | bash
+	OR derooy-uninstall
+## reinstall
+	https://raw.githubusercontent.com/derooy/dotfiles/master/bash-it-custom/derooy-reinstall
+	OR derooy-reinstall
+
+
 
 ## todo
 
-+ update script that is seperate from saving script
-+ set completion-ignore-case On
-+ $include /etc/inputrc in ~/.inputrc
 + fancy colours
 + chsh
 + add wget command for authorized keys & securing hardening guide
