@@ -1,6 +1,7 @@
 # bash-it
-alias derooy-update-custom="bash ~/.bash_it/custom/derooy-update-custom.sh"
+alias derooy-install="bash ~/.bash_it/custom/derooy-install.sh"
 alias derooy-uninstall="bash ~/.bash_it/custom/derooy-uninstall.sh"
+alias derooy-reinstall="bash ~/.bash_it/custom/derooy-reinstall.sh"
 # random
 alias c='clear'
 alias q='exit'
