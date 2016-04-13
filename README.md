@@ -11,7 +11,15 @@
 ## reinstall
 	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/scripts/derooy-reinstall.bash | bash
 	OR derooy-reinstall
-
+## colours
+	red = remote/production
+	blue = kodi
+	green = home
+	red = others
+## script to update remote authorized keys
+	name = derooy-authorized-keys-github
+	chmod 400
+	curl -L file > file
 
 
 ## todo
