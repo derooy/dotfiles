@@ -1,4 +1,16 @@
 #!/bin/bash
+# -----------------------------------------------
+# 1. remove previous install, because you can't pull from a depth=1 clone
+# 2. depth 1 clone bash it
+# 3. run bash_it install
+# 4. set theme to zork
+# 5. set default plugins
+# 6. set default completions
+# 7. get custom (clone dotfiles)
+# 8. set tab completion insensitive to caps
+# 9. git push.default simple
+# 10. url.ssh://git@github.com/.insteadOf https://github.com/
+# -----------------------------------------------
 #remove previous install
 cd ~/ # so im not in .bash_it folder to begin with
 rm -rf ~/.bash_it
