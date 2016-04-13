@@ -2,6 +2,7 @@
 alias derooy-install="bash ~/.dotfiles/scripts/derooy-install.bash"
 alias derooy-uninstall="bash ~/.dotfiles/scripts/derooy-uninstall.bash"
 alias derooy-reinstall="bash ~/.dotfiles/scripts/derooy-reinstall.bash"
+alias derooy-authorized-keys-github="bash ~/.dotfiles/scripts/derooy-authorized-keys-github.bash"
 # random
 alias c='clear'
 alias q='exit'
