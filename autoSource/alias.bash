@@ -1,7 +1,7 @@
 # bash-it
-alias derooy-install="bash ~/.dotfiles/scripts/derooy-install.sh"
-alias derooy-uninstall="bash ~/.dotfiles/scripts/derooy-uninstall.sh"
-alias derooy-reinstall="bash ~/.dotfiles/scripts/derooy-reinstall.sh"
+alias derooy-install="bash ~/.dotfiles/scripts/derooy-install.bash"
+alias derooy-uninstall="bash ~/.dotfiles/scripts/derooy-uninstall.bash"
+alias derooy-reinstall="bash ~/.dotfiles/scripts/derooy-reinstall.bash"
 # random
 alias c='clear'
 alias q='exit'
