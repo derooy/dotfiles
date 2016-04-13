@@ -9,7 +9,7 @@
 	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/bash-it-custom/derooy-uninstall.sh | bash
 	OR derooy-uninstall
 ## reinstall
-	https://raw.githubusercontent.com/derooy/dotfiles/master/bash-it-custom/derooy-reinstall
+	curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/bash-it-custom/derooy-reinstall | bash
 	OR derooy-reinstall
 
 
