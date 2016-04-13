@@ -18,8 +18,7 @@ completions=(defaults git ssh vagrant git_flow_avh)
 #install or update of bash-it
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it #because not possible to fetch depth=1 safely
 bash ~/.bash_it/install.sh
-#set theme to zork
-sed -i '/export BASH_IT_THEME=/ s/bobby/zork/' ~/.bashrc
+
 source ~/.bashrc #so new theme and can get plugins etc.
 cd ~/
 # unset all plugins, alias' and compltetions
@@ -60,4 +59,11 @@ echo "tab completion case insenstive"
 echo "\$include /etc/inputrc" >> ~/.inputrc
 echo "set completion-ignore-case On" >> ~/.inputrc
 git config --global push.default simple
+
+mkdir -p ~/.bash_it/custom/themes/derooy
+ln -s ~/.dotfiles/customTheme/derooy.theme.bash ~/.bash_it/custom/themes/derooy/derooy.theme.bash
+#set theme to derooy which is zork with more things
+sed -i '/export BASH_IT_THEME=/ s/bobby/derooy/' ~/.bashrc
+
+#tell user things
 echo "--= please run reload =--"
