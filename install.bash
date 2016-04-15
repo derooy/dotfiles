@@ -13,7 +13,7 @@
 # settings
 plugins=(alias-completion base explain)
 aliases=()
-completions=(defaults git ssh vagrant git_flow_avh)
+completions=(defaults git ssh vagrant git_flow_avh bash-it)
 # -----------------------------------------------
 #install or update of bash-it
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it #because not possible to fetch depth=1 safely
