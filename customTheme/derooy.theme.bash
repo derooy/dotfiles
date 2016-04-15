@@ -76,7 +76,7 @@ prompt() {
         my_ps_host="${green}\h${normal}";
         my_ps_host_root="${green}\h${normal}";
         ;;
-        raspberrypi) 
+        raspberrypi|kodim|kodiw) 
         my_ps_host="${blue}\h${normal}";
         my_ps_host_root="${blue}\h${normal}";
         ;;
