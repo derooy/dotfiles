@@ -8,7 +8,7 @@
 # 7. get custom (clone dotfiles)
 # 8. set tab completion insensitive to caps
 # 9. git push.default simple
-# 10. url.ssh://git@github.com/.insteadOf https://github.com/
+# 10. url.ssh://git@github.com/.insteadOf https://github.com/ (don't do this because it messes with anonymous git clones)
 # -----------------------------------------------
 # settings
 plugins=(alias-completion base explain)
