@@ -72,7 +72,7 @@ prompt() {
     my_ps_host_root="${red}\h${normal}";
     hn=$(hostname)
     case $hn in
-        pantha|zebra|bream) 
+        pantha|zebra|bream|chrx)
         my_ps_host="${green}\h${normal}";
         my_ps_host_root="${green}\h${normal}";
         ;;
