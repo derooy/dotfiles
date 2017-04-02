@@ -22,7 +22,6 @@ alias gc='git commit -v -a'
 alias ga='git add .'
 alias gl='git pull'
 alias gp='git push'
-alias gca='git pull && git add . && git commit -am "auto commit" && git push'
 # screen
 alias sls="screen -ls" #list screens
 alias sd="screen -dmS" #screen in daemon mode
