@@ -44,6 +44,7 @@ function gca() {
 	msg="auto"
 	if [ "$@" != "" ]
 	then msg="$@"
+	fi
 	git commit -a -m "$@"
 	git push
 }
