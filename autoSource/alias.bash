@@ -39,6 +39,7 @@ function ppa() {
 	sudo add-apt-repository ppa:$@
 }
 function gca() {
+	git pull
 	git add .
 	msg="auto"
 	if [ "$@" != "" ]
