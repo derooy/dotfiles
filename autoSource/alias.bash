@@ -39,6 +39,14 @@ alias ppal='grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*'
 function ppa() {
 	sudo add-apt-repository ppa:$@
 }
+function gca() {
+	git add .
+	msg="auto"
+	if [ "$@" != "" ]
+	then msg="$@"
+	git commit -a -m "$@"
+	git push
+}
 
 #vagrant
 alias vp='vagrant provision'
