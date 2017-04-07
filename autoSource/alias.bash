@@ -41,11 +41,13 @@ function ppa() {
 function gca() {
 	git pull
 	git add .
-	msg="auto"
-	if [ "$@" != "" ]
-	then msg="$@"
+	msg=""
+	if [[ "$@" == "" ]]; then
+		msg="auto"
+	else
+		msg="$@"
 	fi
-	git commit -a -m "$@"
+	git commit -a -m "$msg"
 	git push
 }
 
