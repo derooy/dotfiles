@@ -11,7 +11,7 @@
 # 10. url.ssh://git@github.com/.insteadOf https://github.com/ (don't do this because it messes with anonymous git clones)
 # -----------------------------------------------
 # settings
-plugins=(alias-completion base dirs git hub nvm rbenv ssh go)
+plugins=(alias-completion base dirs git hub nvm rbenv ssh)
 aliases=()
 completions=(defaults git ssh bash-it dirs git gulp hub npm nvm ssh go)
 # -----------------------------------------------
