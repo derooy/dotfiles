@@ -13,7 +13,7 @@
 # settings
 plugins=(alias-completion base dirs git hub nvm rbenv ssh)
 aliases=()
-completions=(defaults git ssh bash-it dirs git gulp hub npm nvm ssh go)
+completions=(defaults git ssh bash-it dirs git gulp hub npm nvm ssh)
 # -----------------------------------------------
 #install or update of bash-it
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it #because not possible to fetch depth=1 safely
