@@ -64,6 +64,8 @@ mkdir -p ~/.bash_it/custom/themes/derooy
 ln -s ~/.dotfiles/customTheme/derooy.theme.bash ~/.bash_it/custom/themes/derooy/derooy.theme.bash
 #set theme to derooy which is zork with more things
 sed -i '/export BASH_IT_THEME=/ s/bobby/derooy/' ~/.bashrc
-
+# make .dotfiles writable
+cd ~/.dotfiles
+git remote set-url origin git@github.com:derooy/dotfiles.git
 #tell user things
 echo "--= please run reload =--"
