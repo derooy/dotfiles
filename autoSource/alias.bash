@@ -48,7 +48,7 @@ function gca() {
 	read emote
 	echo "message"
 	read msg
-	git commit -a -m "${EMOTES[$emote]} $msg"
+	git commit -a -m "${EMOTES[$((emote-1))]} $msg"
 	git push
 }
 
