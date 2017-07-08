@@ -45,11 +45,9 @@ function gca() {
 	git pull
 	git add .
 	echo ${COMMIT_NAMES[*]}
-	echo "type: "
-	read -p emote
-	echo "message: "
-	read -p msg
-	git commit -a -m "${EMOTES[$((emote-1))]} $msg"
+	read -e -p "emote [1-15]: " EMOTE
+	read -e -p "msg: " MSG
+	git commit -a -m "${EMOTES[$((EMOTE-1))]} $MSG"
 	git push
 }
 

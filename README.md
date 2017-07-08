@@ -18,8 +18,3 @@
 	red = others
 
 ## todo
-
-+ default clone is https for anonymous, but if I want write access: "git remote set-url origin git@github.com:derooy/dotfiles.git"
-+ terminator layouts to .config ( and create )
-+ auto color change to background depending on server? at least PS1.
-+ .screenrc
