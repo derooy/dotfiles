@@ -39,16 +39,16 @@ alias ppal='grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*'
 function ppa() {
 	sudo add-apt-repository ppa:$@
 }
+COMMIT_NAMES=("[1] Bugfix", "[2] Refactoring", "[3] Documentation", "[4] New Feature", "[5] Tests", "[6] Work In Progress", "[7] Cosmetic", "[8] Removal", "[9] Initial Commit", "[10] Metadata", "[11] Tooling", "[12] Performance", "[13] Version Tag", "[14] Deprecation", "[15] Internationalization")
+EMOTES=(":bug:", ":recycle:", ":books:", ":sparkles:", ":rotating_light:", ":construction:", ":art:", ":wastebasket:", ":tada:", ":card_index:", ":wrench:", ":racehorse:", ":bookmark:", ":hankey:", ":globe_with_meridians:")
 function gca() {
 	git pull
 	git add .
-	msg=""
-	if [[ "$@" == "" ]]; then
-		msg="auto"
-	else
-		msg="$@"
-	fi
-	git commit -a -m "$msg"
+	echo ${COMMIT_NAMES[*]}
+	read emote
+	echo "message"
+	read msg
+	git commit -a -m "${EMOTES[$emote]} $msg"
 	git push
 }
 

@@ -11,9 +11,9 @@
 # 10. url.ssh://git@github.com/.insteadOf https://github.com/ (don't do this because it messes with anonymous git clones)
 # -----------------------------------------------
 # settings
-plugins=(alias-completion base dirs git hub nvm rbenv ssh)
+plugins=(alias-completion base git hub nvm rbenv ssh)
 aliases=()
-completions=(defaults git ssh bash-it dirs git gulp hub npm nvm ssh)
+completions=(defaults git ssh bash-it git gulp hub npm nvm ssh)
 # -----------------------------------------------
 #install or update of bash-it
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it #because not possible to fetch depth=1 safely
@@ -47,7 +47,7 @@ git clone --depth=1 https://github.com/derooy/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles/autoSource
 user=$(whoami)
 
-echo "updating aliases into bash-it"
+echo "aliasing autoSource into bash_it/custom"
 FILES=~/.dotfiles/autoSource/*
 for f in $FILES
 do
