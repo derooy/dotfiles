@@ -67,5 +67,9 @@ sed -i '/export BASH_IT_THEME=/ s/bobby/derooy/' ~/.bashrc
 # make .dotfiles writable
 cd ~/.dotfiles
 git remote set-url origin git@github.com:derooy/dotfiles.git
+# save config rsa key
+touch ~/.ssh/config
+echo "IdentityFile ~/.ssh/id_rsa" >> ~/.ssh/config
+chmod 600 ~/.ssh/config
 #tell user things
 echo "--= please run reload =--"
