@@ -59,6 +59,7 @@ echo "tab completion case insenstive"
 echo "\$include /etc/inputrc" >> ~/.inputrc
 echo "set completion-ignore-case On" >> ~/.inputrc
 git config --global push.default simple
+git config --global push.followTags true
 
 mkdir -p ~/.bash_it/custom/themes/derooy
 ln -s ~/.dotfiles/customTheme/derooy.theme.bash ~/.bash_it/custom/themes/derooy/derooy.theme.bash
