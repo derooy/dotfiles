@@ -18,3 +18,7 @@
 	red = others
 
 ## todo
+
+* column output for gca
+* extra options for gca
+* ssh/config identfile not working
