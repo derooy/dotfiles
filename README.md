@@ -22,3 +22,12 @@
 * column output for gca
 * extra options for gca
 * ssh/config identfile not working
+* 
+
+```
+An alternative to using git@github.com is to generate a personal access token on your GitHub account, grant it repo access, and then use the following instead:
+
+git config --global url."https://${GITHUB_TOKEN}:x-oauth-basic@github.com/".insteadOf "https://github.com/"
+
+That should still work with go get -u, and also works with Docker builds (my particular use case, and how I came across your gist).
+```
