@@ -11,9 +11,9 @@
 # 10. url.ssh://git@github.com/.insteadOf https://github.com/ (don't do this because it messes with anonymous git clones)
 # -----------------------------------------------
 # settings
-plugins=(alias-completion base hub nvm rbenv ssh)
+plugins=(alias-completion ssh base git)
 aliases=()
-completions=(defaults ssh bash-it git gulp hub npm nvm ssh)
+completions=(defaults bash-it ssh git)
 # -----------------------------------------------
 #install or update of bash-it
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it #because not possible to fetch depth=1 safely
