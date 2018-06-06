@@ -22,7 +22,7 @@
 * column output for gca
 * extra options for gca
 * ssh/config identfile not working
-* 
+* mkdir .ssh chmod as per OSMC raspberry pi 2/3 google doc
 
 ```
 An alternative to using git@github.com is to generate a personal access token on your GitHub account, grant it repo access, and then use the following instead:
