@@ -19,8 +19,6 @@
 
 ## todo
 
-* column output for gca
-* extra options for gca
 * ssh/config identfile not working
 * mkdir .ssh chmod as per OSMC raspberry pi 2/3 google doc
 

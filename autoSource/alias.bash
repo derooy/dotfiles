@@ -44,9 +44,9 @@ EMOTES=(":bug:", ":recycle:", ":books:", ":sparkles:", ":rotating_light:", ":con
 function gca() {
 	git pull
 	git add .
-	echo ${COMMIT_NAMES[*]}
+	printf '%s\n' "${COMMIT_NAMES[@]}" | column
 	read -e -p "emote [1-15]: " EMOTE
-	read -e -p "msg: " MSG
+	read -e -p "${COMMIT_NAMES[$((EMOTE-1))]} msg: " MSG
 	git commit -a -m "${EMOTES[$((EMOTE-1))]} $MSG"
 	git push
 }
