@@ -1,3 +1,5 @@
+## issues
+* bash-it not found during install on ubuntu 18.04
 ## Install
 	sudo apt-get update
 	sudo apt-get install -y bash git curl
