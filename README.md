@@ -28,7 +28,7 @@ fi
 
 # Download .bash_aliases from the repository
 echo "Downloading .bash_aliases from the repository..."
-curl -L https://raw.githubusercontent.com/derooy/dotfiles/main/.bash_aliases -o ~/.bash_aliases
+curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/.bash_aliases -o ~/.bash_aliases
 
 # Source .bash_aliases from .bashrc if it exists
 echo "Sourcing .bash_aliases from .bashrc if it exists..."
