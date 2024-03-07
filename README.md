@@ -1,5 +1,4 @@
 ```bash
-```bash
 # Define color codes
 green='\033[0;32m'
 red='\033[0;31m'
@@ -86,5 +85,4 @@ fi
 
 echo "Done"
 
-```
 ```
