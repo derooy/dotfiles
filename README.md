@@ -36,31 +36,11 @@ else
     echo -e "$fail Download and install authorized keys"
 fi
 
-# Git config - only ask if configs are empty
-current_email=$(git config --global user.email)
-current_username=$(git config --global user.name)
+# Set Git global configuration directly without checks
+git config --global user.email "4516159+derooy@users.noreply.github.com"
+git config --global user.name "matt"
 
-if [ -z "$current_email" ]; then
-    read -p "Enter your email: " email
-    if git config --global user.email "$email"; then
-        echo -e "$success Git user.email set."
-    else
-        echo -e "$fail Git user.email not set."
-    fi
-else
-    echo -e "$success Git user.email already set."
-fi
-
-if [ -z "$current_username" ]; then
-    read -p "Enter your username: " username
-    if git config --global user.name "$username"; then
-        echo -e "$success Git user.name set."
-    else
-        echo -e "$fail Git user.name not set."
-    fi
-else
-    echo -e "$success Git user.name already set."
-fi
+echo -e "$success Git user.email and user.name have been set."
 
 # Download .bash_aliases from the repository
 if curl -L https://raw.githubusercontent.com/derooy/dotfiles/master/.bash_aliases -o ~/.bash_aliases; then
